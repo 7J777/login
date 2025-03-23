@@ -1,0 +1,14 @@
+name: External Event Workflow
+
+on:
+  repository_dispatch:
+    types: [button_clicked]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run a script
+        run: echo "Workflow triggered by external event"
