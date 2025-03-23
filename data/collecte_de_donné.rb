@@ -2,8 +2,8 @@ require 'csv'
 connected=false
 age=0
 
-csv_file_path = '/Users/clovis/Desktop/data/users.csv'
-admin_csv_path = '/Users/clovis/Desktop/data/admin.csv'
+csv_file_path = '/data/users.csv'
+admin_csv_path = '/data/admin.csv'
 
 if File.exist?(csv_file_path)
   users = CSV.table(csv_file_path).map(&:to_h)
