@@ -13,5 +13,5 @@
 
 -- Load data from users.csv into the users table
 COPY users (first_name, last_name, city, age, id, password)
-FROM '/Users/clovis/Desktop/data/users.csv'
+FROM '/data/users.csv'
 WITH (FORMAT csv, HEADER true);
