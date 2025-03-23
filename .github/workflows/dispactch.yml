@@ -10,5 +10,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Run a script
-        run: echo "Workflow triggered by external event"
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Run server.py
+        run: python data/server.py
