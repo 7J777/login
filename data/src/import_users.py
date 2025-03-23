@@ -5,7 +5,7 @@ import os
 import subprocess
 
 # Path to the SQL script
-sql_script_path = '/Users/clovis/Desktop/data/src/import_users.sql'
+sql_script_path = '/data/src/import_users.sql'
 
 # Command to execute the SQL script
 command = f'psql -U your_username -d your_database -f {sql_script_path}'
