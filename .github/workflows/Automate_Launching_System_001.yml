@@ -23,7 +23,7 @@ jobs:
       - name: Set up Ruby
         uses: actions/setup-ruby@v1
         with:
-            ruby-version: '3.4'
+            ruby-version: '3.x'
   
       - name: Run server.py
         run: python data/launch.py
