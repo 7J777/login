@@ -3,7 +3,11 @@ name: update_data_001
 on:
   schedule:
     - cron: '0 10 * * *'
-
+    - cron: '0 14 * * *'
+    - cron: '0 16 * * *'
+    - cron: '0 20 * * *'
+    - cron: '0 04 * * *'
+    - cron: '0 08 * * *'
 jobs:
   import-users:
     runs-on: ubuntu-latest
