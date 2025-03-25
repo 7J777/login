@@ -1,8 +1,8 @@
-name: Scheduled Import
+name: update_data_001
 
 on:
   schedule:
-    - cron: '30 10 * * *'  # Exécuté tous les jours à 10h30
+    - cron: '0 10 * * *'
 
 jobs:
   import-users:
@@ -24,4 +24,4 @@ jobs:
           # par exemple : pip install pandas
 
       - name: Run import script
-        run: python /Users/clovis/Desktop/data/src/import_users.py
+        run: python /data/src/import_users.py
