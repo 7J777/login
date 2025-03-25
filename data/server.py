@@ -13,7 +13,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         subprocess.run([
             'curl', '-X', 'POST',
             '-H', 'Accept: application/vnd.github.v3+json',
-            '-H', 'Authorization: token YOUR_GITHUB_TOKEN',  # Remplacez par votre token GitHub
+            '-H', 'Authorization: token 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',  # Remplacez par votre token GitHub
             '-d', json.dumps({'event_type': 'button_clicked'}),
             'https://api.github.com/repos/7J777/login/dispatches'
         ])
