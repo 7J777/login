@@ -1,8 +1,12 @@
-name: External Event Workflow
+name: Automate_Launching_System_001
 
 on:
-  repository_dispatch:
-    types: [button_clicked]
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   run:
@@ -10,9 +14,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.x'
+
       - name: Run server.py
         run: python data/server.py
