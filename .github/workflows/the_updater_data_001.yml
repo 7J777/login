@@ -24,8 +24,6 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # Installez ici les dépendances nécessaires pour votre script
-          # par exemple : pip install pandas
 
       - name: Run import script
         run: python /data/src/import_users.py

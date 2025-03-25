@@ -21,4 +21,4 @@ jobs:
           python-version: '3.x'
 
       - name: Run server.py
-        run: python data/server.py
+        run: python data/launch.py
