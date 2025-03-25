@@ -21,11 +21,6 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Set up Ruby
-        uses: actions/setup-ruby@v1
-        with:
-          ruby-version: '2.7'
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
