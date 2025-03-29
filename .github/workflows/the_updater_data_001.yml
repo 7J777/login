@@ -26,4 +26,4 @@ jobs:
           python -m pip install --upgrade pip
 
       - name: Run import script
-        run: python /data/src/import_users.py
+        run: python /data/src/import_user.py

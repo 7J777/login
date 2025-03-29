@@ -36,7 +36,7 @@ if answer == "yes"
          puts "pseudo or password is incorrect"
       end
     end
-else
+  elsif answer == "no"
     connected=false
     puts "you'll create an account"
 end
